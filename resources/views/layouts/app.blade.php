@@ -54,7 +54,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <img src="{{ asset('data_file/'.Auth::user()->id.'') }}" class="profile-xs">
+                                    <img src="data_file/profile_default.jpg" class="profile-xs">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -102,7 +102,7 @@
                     </tr>
                     <tr>
                         <td colspan="3" class="text-center pt-4">
-                            <h6>© 2019 enamLapan</h6>
+                            <h6>© 2021 M Prayogi</h6>
                         </td>
                     </tr>
                 </table>

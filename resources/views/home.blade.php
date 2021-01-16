@@ -15,7 +15,7 @@
                         <li class="list-group-item">
                             <a href="profile?q={{ Auth::user()->id }}">
                                 <div class="form-inline my-3">
-                                    <img src="{{ asset('data_file/'.Auth::user()->id.'') }}" class="profile-sm">
+                                    <img src="data_file/profile_default.jpg" class="profile-sm">
                                     <div class="ml-3 uname">{{ Auth::user()->name }}</div>
                                 </div>
                             </a>
@@ -45,7 +45,7 @@
                         <table class="w-100 mx-4 my-2">
                             <tr>
                                 <td rowspan="2">
-                                    <img src="{{ asset('data_file/'.Auth::user()->id.'') }}" class="profile-sm mx-3">
+                                    <img src="data_file/profile_default.jpg" class="profile-sm mx-3">
                                 </td>
                                 <td class="w-100">
                                     <form action="store_content" method="post" enctype="multipart/form-data" class="mt-3">
@@ -93,7 +93,7 @@
                             <table class="w-100 mx-4 my-2">
                                 <tr>
                                     <td rowspan="2">
-                                        <img src="{{ asset("data_file/".$n->id."") }}" class="profile-sm mx-3">
+                                        <img src="data_file/profile_default.jpg" class="profile-sm mx-3">
                                     </td>
                                     <td class="w-100">
                                         <a href="profile?q={{ $n->id }}">
@@ -121,7 +121,7 @@
                         </div>
                         <div class="card-content">
                             @if (!empty($n->file))
-                                <img src="{{ asset("data_file/".$n->file."") }}" class="w-100">
+                                <img src="data_file/profile_default.jpg" class="w-100">
                             @endif
                             <div class="mx-3 my-3">
                                 {{ $n->content }}
@@ -164,7 +164,7 @@
                                     </div>
                                     <div class="card-content">
                                         @if (!empty($n->file))
-                                            <img src="{{ asset("data_file/".$n->file."") }}" class="w-100">
+                                            <img src="data_file/profile_default.jpg" class="w-100">
                                         @endif
                                         <div class="mx-3 my-3">
                                             {{ $n->content }}
